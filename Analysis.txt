@@ -1,0 +1,62 @@
+
+/*
+ * Author 		: 	Aman Bhatia and N Narasimha Chaitanya
+ * Timestamp 	: 	26/10/2015, 4:21 PM
+
+
+====================== Energy Function ======================
+
+We tried following energy functions,
+
+(1) Laplacian Operator on Gray Image
+(2) Computation of Gradient by Sobel Operator
+(3) Laplacian Operator on RGB Image
+
+We observed that the laplacian operator on the RGB Image does not work well in few cases. However, Sobel and Laplacian on Gray Image showed more or less the same results. So,any of them can be used but we have used Laplace.
+
+
+====================== Computational Gain ======================
+
+Huge Computational Gain is Obeserved in case of using pyramids. We have included the results in the data folder. Also we have used 3 levels of pyramid for all the imagegs. Following are the details,
+
+
+(1) Image Name		:	castle.jpg
+	Size 			:	1024 x 694
+	Cols deleted	:	100
+	Rows deleted	:	0
+	Time Taken by Normal Seam Carving Method : 8.63332
+	Time Taken by Seam Carving with Pyramids : 0.147206
+	Reward : 8.48611
+
+
+
+
+(2) Image Name		:	lena.jpg
+	Size 			:	512x512
+	Cols deleted	:	62
+	Rows deleted	:	62
+	Time Taken by Normal Seam Carving Method : 3.7295
+	Time Taken by Seam Carving with Pyramids : 0.081472
+	Reward : 3.64803
+
+
+
+
+(3) Image Name		:	scene.jpg
+	Size 			:	500 x 188
+	Cols deleted	:	200
+	Rows deleted	:	0
+	Time Taken by Normal Seam Carving Method : 1.95147
+	Time Taken by Seam Carving with Pyramids : 0.039155
+	Reward : 1.91231
+
+
+
+
+(4) Image Name		:	swim.png
+	Size 			:	507 x 285
+	Cols deleted	:	250
+	Rows deleted	:	0
+	Time Taken by Normal Seam Carving Method : 3.55502
+	Time Taken by Seam Carving with Pyramids : 0.069256
+	Reward : 3.48576
